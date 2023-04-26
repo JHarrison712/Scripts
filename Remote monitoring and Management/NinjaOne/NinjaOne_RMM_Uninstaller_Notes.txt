@@ -1,0 +1,7 @@
+line 1: queries the path of the NinjaRMMAgent Service and saves the path to a text file
+
+line 2: takes the text from that file and saves it as a variable
+
+line 3: takes that variable and replaces the exe for the service with the exe for the uninstaller and its switches and saves it as a new variable
+
+line 4: runs the variable which is the entire path including the uninstaller with the unattended switch.
