@@ -19,4 +19,11 @@ sleep 5
 
 Write-host "Webroot uninstalled"
 
+Remove-Item –path 'C:\Program Files (x86)\Webroot' –recurse
+sleep 1
+Remove-Item –path 'C:\programdata\Webroot' –recurse
+sleep 1
+Remove-Item -path 'C:\Program Files\Webroot' -recurse
+sleep 1
+
 Restart-computer -force
