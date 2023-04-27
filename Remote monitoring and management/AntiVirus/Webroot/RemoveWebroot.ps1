@@ -28,7 +28,9 @@ sleep 1
 
 Remove-Item –path 'C:\Program Files (x86)\Webroot' –recurse
 sleep 1
-Remove-Item –path 'C:\programdata\Webroot' –recurse
+Remove-Item –path 'C:\programdata\WRData' –recurse
+sleep 1
+Remove-Item –path 'C:\programdata\WRCore' –recurse
 sleep 1
 Remove-Item -path 'C:\Program Files\Webroot' -recurse
 sleep 1
