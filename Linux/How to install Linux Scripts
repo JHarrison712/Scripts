@@ -1,0 +1,5 @@
+To install any Linux script run these commands.
+
+Sudo wget (Raw URL from github)
+chmod +x (The file name .sh)
+sudo ./(The file name .sh)
