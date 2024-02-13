@@ -194,3 +194,11 @@ sudo -H -u librenms bash -c 'pip3 install --user -U -r /opt/librenms/requirement
 echo "###############################################################################################"
 echo "Naviagte to http://$HOSTNAME/install in you web browser to finish the installation."
 echo "###############################################################################################"
+
+# Enable the Scheduler
+echo "Eanbling the scheduler"
+sudo cp /opt/librenms/dist/librenms-scheduler.service /opt/librenms/dist/librenms-scheduler.timer /etc/systemd/system/
+sudo systemctl enable librenms-scheduler.timer
+sudo systemctl start librenms-scheduler.timer
+
+
