@@ -175,7 +175,7 @@ chmod +x /usr/bin/distro
 systemctl enable snmpd
 systemctl restart snmpd
 ##### Setup Cron job
-cp /opt/librenms/librenms.nonroot.cron /etc/cron.d/librenms
+cp /opt/librenms/dist/librenms.cron /etc/cron.d/librenms
 ##### Setup logrotate config
 cp /opt/librenms/misc/librenms.logrotate /etc/logrotate.d/librenms
 <<removed
